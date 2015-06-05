@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOS Merchant</title>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" type="test/css" href="css/bos.css">
+  <link rel="stylesheet" type="test/css" href="css/bootstrap.min.css">
+  
+</head>
+<body class="container" ng-app="bosApp" ng-controller="saleCtrl">
+
+
+    <div class="topMenu">
+        <form class="form-inline">
+          <div class="form-group">
+              <label class="sr-only" for="exampleInputAmount">Merchant Bitcoin Address</label>
+             <div class="input-group">
+                <div class="input-group-addon">Paste</div>
+              <input type="text" class="form-control input-size" ng-model="saleAmount" placeholder="Bitcoin Address">
+      
+
+               </div>
+
+           </div><a class="btn btn-primary pull-right" href="sale.html">Sale</a>
+              
+</form>
+         
+        </div>
+
+  
+    <div class="qr">
+      <qr class="qr" text="saleQr()" type-number="typeNumber" correction-level="correctionLevel" size="size" input-mode="inputMode" image="image"></qr>
+    </div>
+ 
+    
+
+
+<script src="src/angular.min.js"></script>
+<script src="lib/qrcode.js"></script>
+<script src="src/angular-qr.js"></script>
+<script src="app.js"></script>
+<script src="src/bootstrap.min.js"></script>
+
+</body>
+</html>
